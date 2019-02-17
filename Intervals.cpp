@@ -9,15 +9,15 @@
 #include <cmath>
 
 int main();
-int interval_calculator(); 	//the main function where calculations are done
-void print_immed();  //prints the immediate interval
-void print_memor();  // prints the memory interval
-void int_multi(double ac, double ad, double bc, double bd); //performs interval_divide and multiply
-void int_inter(double c, double d); //performs intersect
+int interval_calculator();											 													//the main function where calculations are done
+void print_immed();																											  //prints the immediate interval
+void print_memor(); 																										 // prints the memory interval
+void int_multi(double ac, double ad, double bc, double bd); 						//performs interval_divide and multiply
+void int_inter(double c, double d); 																	  //performs intersect
 void int_integ();  //performs integers
-void int_cart(double a, double b, double c, double d); //performs cartesian integers
+void int_cart(double a, double b, double c, double d); 								//performs cartesian integers
 
-int args = 0; //initial value for the number of parameters inside the nums array that takes user input
+int args = 0; 			//initial value for the number of parameters inside the nums array that takes user input
 
 
 struct Interval {  //struct for interval
@@ -49,7 +49,7 @@ int interval_calculator()
 
 								while (input != "exit") //will exit if exit is the input
 								{
-																args = 0; //starts with 0 numbers in the array nums which is number of numbers brought in from user input
+																args = 0; 	//starts with 0 numbers in the array nums which is number of numbers brought in from user input
 																input = "initial"; //if you just type numbers it doesnt clear the row
 																std::cout << "input :> ";
 																std::cin >> input; //takes the input
